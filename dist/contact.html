@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="contact.php">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="afbeeldingen/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="afbeeldingen/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="afbeeldingen/favicon/favicon-16x16.png">
+    <link rel="manifest" href="afbeeldingen/favicon/site.webmanifest">
+    <link rel="mask-icon" href="afbeeldingen/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="contact">
+<header>
+    <!--        <h1>Sass - Bootstrap 4-->
+    <!--            <small class="text-muted">project 1ITF</small>-->
+    <!--        </h1>-->
+    <!--        <hr class="mb-4">-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav_blue">
+        <a class="navbar-brand" href="index.html"><img src="afbeeldingen/logo.png" alt="logo" class="logo" height="100%" width="100%"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+<!--                <li class="nav-item active">-->
+<!--                    <a class="nav-link" href="index.html">Homepage <span class="sr-only">(current)</span></a>-->
+<!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="staycation1.html">Oma's museum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="staycation2.html">Barbecue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="staycation3.html">Kruidentocht</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="examen.html">Examen</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <h1>Contactgegevens</h1>
+    <form action="contact.php" method="post" id="list">
+                <p>
+                    <label for="naam">Naam:</label>
+                    <input type="text" id="naam" maxlength="50" name="gebruikersnaam" placeholder="Naam" autofocus required>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                </p>
+                <p">
+                    <label for="tel">Telefoonnummer:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Telefoonnummer" required>
+                </p>
+
+<!--                <p>-->
+<!--                    <label for="dorp">Gemeente:</label>-->
+<!--                    <select id="dorp" name="gemeent">-->
+<!--                        <option value="Geel">Geel</option>-->
+<!--                        <option value="Turnhout">Turnhout</option>-->
+<!--                        <option value="Arendonk" selected>Arendonk</option>-->
+<!--                        <option value="Mol">Mol</option>-->
+<!--                    </select>-->
+<!--                </p>-->
+
+            <div>
+                <p>
+                    <label for="opmerking">Graag hier uw opmerkingen:</label>
+                    <textarea rows="5" cols="50" id="opmerking" name="opmerking" placeholder="Stel hier uw vraag ..."></textarea>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="submit" value="versturen" id="submit">
+                </p>
+            </div>
+        </form>
+</main>
+
+<footer class="py-3">
+    <div class="small text-center mt-3">
+        <a href="https://www.thomasmore.be/" class="pl-2 pr-2"><span><i class="fas fa-building"></i> Thomas More</span></a>
+        <a href="https://venlomj.sinners.be/html5/Uidaging_2/index.html" class="pl-2 pr-2"> <span><i class="fab fa-phoenix-framework"></i> it's Lego time</span></a>
+        <a href="https://venlomj.sinners.be/index_wb.html" class="pl-2 pr-2"> <span><i class="fab fa-phoenix-framework"></i> Fawn-Tech</span></a>
+    </div>
+    <p id="author" class="text-center">Eindverantwoordelijke = Murrel Venlo </p>
+</footer>
+
+<script>
+    $("submit").click(function (event) {
+        event.preventDefault();
+        $("").html("Welkom");
+
+    })
+    $("#list").submit(function (event) {
+        event.preventDefault();
+        var tekstInput = $("#list").val();
+        $("#list").html(tekstInput);
+
+    })
+
+
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

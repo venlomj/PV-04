@@ -1,0 +1,13 @@
+.examen {
+  background-image: url(./dist/afbeeldingen/code-example.jpg);
+  background-size: cover;
+
+
+  h1, h2 {
+    font-family: $ff-examenP;
+
+    p {
+      font-family: $ff-examenT;
+    }
+  }
+}

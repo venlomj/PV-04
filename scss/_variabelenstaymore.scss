@@ -1,0 +1,55 @@
+// import Font Awesome
+
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+
+//fonts examen
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+
+
+
+// lettertype
+$ff-kopstukken: 'Kaushan Script', cursive;
+$ff-paragrafen: 'Noto Sans', sans-serif;
+//lettertype examen
+$ff-examenT: 'Red Hat Text', sans-serif;
+$ff-examenP: 'Graduate', cursive;
+
+
+// breakpoints
+
+
+// kleuren
+
+$nav_blue: #00FFFF;
+
+$yellow: lighten(#FFFF00, 5%);
+$yellow: darken(#FFFF00, 10%);
+$examen: #4682b4;
+
+
+//$itfactory: #72c5d0;
+//$accentkleur: saturate(invert($itfactory), 20%);
+
+
+
+
+
+
+
+// breakpoints
+$breakpoint-sm: 576;
+$breakpoint-md: 768;
+$breakpoint-lg: 960;
+$breakpoint-xl: 1140;
+
+$breakpoint-map: (
+        'sm': $breakpoint-sm,
+        'md': $breakpoint-md,
+        'lg': $breakpoint-lg,
+        'xl': $breakpoint-xl
+)
